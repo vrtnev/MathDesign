@@ -1,7 +1,12 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: "Roboto Slab";
     background-color: #eaeaea;
 }
 
@@ -105,6 +110,7 @@ footer table td, footer table th {
 footer .bottomline {
     background-color: #303030;
     color: white;
+    padding: 5px 0;
 }
 
 footer .bottomline img {
