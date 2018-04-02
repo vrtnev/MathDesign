@@ -33,3 +33,26 @@ header ul a {
 header ul li:hover {
     background-color: #434545;
 }
+
+.titleBlock .container {
+    width: 800px;
+}
+
+.titleBlock {
+    background-image: url("../img/index/titleBG.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+
+.titleBlock .logo {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.titleBlock h1 {
+    text-align: center;
+    font-size: 60px;
+}
