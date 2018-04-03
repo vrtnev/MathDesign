@@ -91,6 +91,25 @@ main .leftMenu ul li a {
     border-bottom: 2px solid #767676;
 }
 
+main .leftMenu .submenu {
+    padding-left: 10px;
+    background-color: #767676;
+}
+
+main .leftMenu .submenu li a {
+    border: none;
+    color: #d5d5d5;
+}
+
+main .leftMenu ul li a:hover {
+    background-color: #767676;
+}
+
+main .leftMenu .active a {
+    border-bottom: 2px solid #434545;
+    background-color: #767676;
+}
+
 main .groups {
     text-align: center;
 }
