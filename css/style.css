@@ -15,6 +15,7 @@ body {
     margin: auto;
 }
 
+
 header {
     background-color: #303030;
     color: white;
@@ -62,7 +63,7 @@ header ul li:hover {
 
 .titleBlock h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 42px;
     display: block;
     width: 800px;
     margin: auto;
@@ -110,6 +111,14 @@ main .leftMenu .active a {
     background-color: #767676;
 }
 
+main h2 {
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+}
+
 main .groups {
     text-align: center;
 }
@@ -141,10 +150,18 @@ main .groups .group h2, main .groups .group p {
 footer {
     border-top: 4px solid black;
     background-color: #c5c5c5;
+    margin-top: 30px;
 }
 
 footer table {
     text-align: left;
+    display: inline-block;
+}
+
+footer .copyrights {
+    display: inline-block;
+    vertical-align: top;
+
 }
 
 footer table td, footer table th {
