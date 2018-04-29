@@ -7,14 +7,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Slab";
-    background-color: #eaeaea;
+    background-color: white;
 }
 
 .container {
     width: 1000px;
     margin: auto;
+    font-size: 0;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p, ul {
+    font-size: 14px;
+    margin: 0;
+}
+
+a {
+    font-size: 14px;
+}
 
 header {
     background-color: #303030;
@@ -111,6 +129,13 @@ main .leftMenu .active a {
     background-color: #767676;
 }
 
+main .content {
+    display: inline-block;
+    width: 780px;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
 main h2 {
     text-align: center;
 }
@@ -147,15 +172,88 @@ main .groups .group h2, main .groups .group p {
     margin: 0;
 }
 
+.theorem, .determination {
+    margin: 20px auto;
+}
+
+.theorem .theoremLogo, .determination .determinationLogo {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    vertical-align: top;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.theorem .theoremContent, .determination .determinationContent {
+    display: inline-block;
+    width: 747px;
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.theorem .theoremContent {
+    border-left: 2px solid #ff6624;
+}
+
+.determination .determinationContent {
+    border-left: 2px solid #0c59cf;
+}
+
+.theorem .theoremContent h3, .determination .determinationContent h3 {
+    margin-top: 0;
+}
+
+.navButtons {
+    margin-top: 20px;
+}
+
+.navButtons a {
+    display: inline-block;
+    background-color: #ebebeb;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navButtons a p, .navButtons a img {
+    display: inline-block;
+}
+
+.navButtons a p {
+    line-height: 24px;
+    vertical-align: top;
+}
+
+.navButtons a img {
+    vertical-align: middle;
+}
+
+.navButtons .forward {
+    float: right;
+}
+
 footer {
     border-top: 4px solid black;
     background-color: #c5c5c5;
     margin-top: 30px;
 }
 
+footer h1 {
+    font-size: 28px;
+}
+
 footer table {
     text-align: left;
     display: inline-block;
+    font-size: 12px;
 }
 
 footer .copyrights {
