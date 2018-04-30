@@ -120,6 +120,10 @@ main .leftMenu .submenu li a {
     color: #d5d5d5;
 }
 
+main .leftMenu .submenu .subActive {
+    margin-left: 10px;
+}
+
 main .leftMenu ul li a:hover {
     background-color: #767676;
 }
