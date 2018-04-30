@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задания - учебное пособие по дискретной математике</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Главы</a></li>
+                    <li><a href="#">Задания</a></li>
+                    <li><a href="#">Теория</a></li>
+                    <li><a href="#">Описание</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="titleBlock">
+            <div class="container">
+                <img class="logo" src="img/index/titleLogo.png">
+                <h1>Задания</h1>
+            </div>
+        </section>
+        <div class="container">
+            <section class="leftMenu">
+                <ul>
+                    <li><a href="#">Основные понятия</a></li>
+                    <li><a href="#">Дифференциальные уравнения первого порядка</a></li>
+                    <li class="active">
+                        <a href="#">Дифференциальные уравнения первого порядка, неразрешенные относительно производной</a>
+                        <ul class="submenu">
+                            <li><a href="#">Частные случаи уравнения F(x,y,y')=0</a></li>
+                            <li><a href="#">Уравнение Лагранжа</a></li>
+                            <li><a href="#">Уравнение Клеро</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Уравнения высших порядков</a></li>
+                    <li><a href="#">Системы дифференциальных уравнений</a></li>
+                    <li><a href="#">Решение дифференциальных ураввнений с помощью рядов</a></li>
+                </ul>
+            </section>
+            <section class="content">
+                <h2>Дифференциальные уравнения первого порядка, неразрешенные относительно производной</h2>
+                <h3>Задание №2</h3>
+                <ul>
+                    <li><b>Пример:</b> Найти общее решение уравнения:</li>
+                </ul>
+                <p class="equation">(y+3y+3y+y)(y+8y+16y)=0</p>
+                <ul>
+                    <li><b>Варианты ответа:</b></li>
+                </ul>
+                <label onclick="showCross(this)"><input type="radio" name="answer">(y+3y+3y+y)(y+8y+16y)=1</label>
+                <label onclick="showCross(this)"><input type="radio" name="answer">(y+3y+3y+y)(y+8y+16y)=2</label>
+                <label onclick="showPlain(this)"><input type="radio" name="answer">(y+3y+3y+y)(y+8y+16y)=3</label>
+                <label onclick="showCross(this)"><input type="radio" name="answer">(y+3y+3y+y)(y+8y+16y)=4</label>
+                <a class="showAnswer" onclick="showAnswer(this)">Показать решение</a>
+                <section class="answer" id="answer">
+                    <h2>Решение</h2>
+                    <p>Имеем дифференциальное уравнение 7-ого порядка. Характеристическое уравнение будет иметь вид:</p>
+                    <p class="equation">(k+1)(k+4)=0,</p>
+                    <p>то есть <b>(k+1)=0</b>, что даст нам <b>k= -1</b>  (кратность 3) и <b>(k+4)=0</b> что даст нам <b>k=2i</b> (пара комплексно-сопряженых корней кратности 2). Следовательно, общее решение можно записать в виде:</p>
+                    <p class="equation">(y+3y+3y+y)(y+8y+16y)=3</p>
+                </section>
+                <div class="navButtons">
+                    <a class="back" href="#">
+                        <img src="svg/back.svg" height="16">
+                        <p>Назад</p>
+                    </a>
+                    <a class="forward" href="#">
+                        <p>Вперёд</p>
+                        <img src="svg/forward.svg" height="16">
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="contacts">
+            <div class="container">
+                <h1>Контакты</h1>
+                <table>
+                    <tr>
+                        <th>Московский политехнический университет</th>
+                        <th>Преподаватель</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>Главный корпус</b></p>
+                            <p>107023, г. Москва, ул. Б. Семеновская, 38<br>+7 (495) 223-05-23</p>
+                        </td>
+                        <td>
+                            <p><b>Муханов С. А.</b></p>
+                            <a>myxahob@bk.ru</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="bottomline">
+            <img src="img/index/footerLogo.png">
+            <p>© 2018 Московский политехнический университет</p>
+        </section>
+    </footer>
+</body>
+<script>
+    plainShowed = false;
+    crossShowed = false;
+    var plain;
+    var cross;
+    function showPlain(elem) {
+        hidePics();
+        if (!plainShowed) {
+            plain = document.createElement('img');
+            plain.src = 'svg/plain.svg';
+            plain.height = 18;
+            elem.appendChild(plain);
+            plainShowed = true;
+        }
+    }
+    
+    function showCross(elem) {
+        hidePics();
+        if (!crossShowed) {
+            cross = document.createElement('img');
+            cross.src = 'svg/cross.svg';
+            cross.height = 18;
+            elem.appendChild(cross);
+            crossShowed = true;
+        }
+    }
+    
+    function hidePics() {
+        if (plain) plain.remove();
+        if (cross) cross.remove();
+        plainShowed = false;
+        crossShowed = false;
+    }
+
+    function showAnswer(button) {
+        button.style.display = 'none';
+        var answer = document.getElementById('answer');
+        answer.style.display = 'block';
+    }
+</script>
+</html>

@@ -136,6 +136,36 @@ main .content {
     padding-left: 20px;
 }
 
+main .content label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 30px;
+}
+
+main .content label img {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+main .content .showAnswer {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    background-color: #aedd94;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .content .answer {
+    display: none;
+    border-top: 2px solid #504f4f;
+    margin-top: 20px;
+}
+
 main h2 {
     text-align: center;
 }
@@ -206,6 +236,13 @@ main .groups .group h2, main .groups .group p {
 
 .theorem .theoremContent h3, .determination .determinationContent h3 {
     margin-top: 0;
+}
+
+.equation {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
 }
 
 .navButtons {
