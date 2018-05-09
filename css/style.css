@@ -183,6 +183,10 @@ main p {
     text-indent: 20px;
 }
 
+.theoremLogo, .determinationLogo {
+    text-indent: 0;
+}
+
 main .groups {
     text-align: center;
 }
